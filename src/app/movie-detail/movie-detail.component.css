@@ -1,27 +1,4 @@
-
-   /* .movie-poster{
-    margin-left:2%;
-    float:left;
-    display: block;
-    width: 300px;
-    height: 450px;
-    border-width: 0px;
-    outline: none;
-}
-.container{
-    padding: 20%;
-}
-.data{
-    margin-left: 60px;
-    display: inline;
-    white-space: normal;
-} */
-
-
-.w3-container{padding:0.01em 16px}
-        .w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
-
-        .custom_bg{
+.custom_bg{
   background-image: radial-gradient(circle at 20% 50%, rgba(19.61%, 7.84%, 7.84%, 0.98) 0%, rgba(27.45%, 13.73%, 13.73%, 0.88) 100%)}
 
 .details-bg{
