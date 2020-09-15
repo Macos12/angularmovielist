@@ -1,0 +1,22 @@
+<div class="details-bg" *ngIf="movie"
+    [style.backgroundImage]="'url(https://image.tmdb.org/t/p/w500'+movie.backdrop_path+')'">
+    <div class="custom_bg">
+      <div class="details-container">
+        <div style="padding:0.01em 16px;">
+          <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="{{movie.title}}" class="details-poster" /> 
+        </div>
+        <div class="details-info">
+          <h2 class="movie-title"> {{movie.original_title}}
+            <span class="release-date">({{movie.release_date|date:"y"}})</span>
+          </h2>
+          
+          <h3>Overview</h3>
+                <div class="overview">
+                  <p>
+                    {{movie.overview}}
+                  </p>
+                </div>
+        </div>
+      </div>
+    </div>
+</div>
