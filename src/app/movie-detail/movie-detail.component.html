@@ -2,21 +2,42 @@
     [style.backgroundImage]="'url(https://image.tmdb.org/t/p/w500'+movie.backdrop_path+')'">
     <div class="custom_bg">
       <div class="details-container">
-        <div style="padding:0.01em 16px;">
-          <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="{{movie.title}}" class="details-poster" /> 
-        </div>
-        <div class="details-info">
-          <h2 class="movie-title"> {{movie.original_title}}
-            <span class="release-date">({{movie.release_date|date:"y"}})</span>
-          </h2>
-          
-          <h3>Overview</h3>
+        <div style="padding: 0;background: transparent;">
+          <mat-grid-list cols="6" rowHeight="600px" gutterSize="0">
+            <mat-grid-tile colspan="2" gutterSize="0">
+              <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="details-poster"
+                alt="{{movie.title}}" />
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-card-content class="details-info">
+                <mat-card-title>
+                  <h2 class="movie-title">{{movie.original_title}}
+                    <span class="release-date">({{movie.release_date|date:"y"}})</span>
+                  </h2>
+                </mat-card-title>
+                <mat-card-title>
+                  <ul class="movie-actions">
+                    <li class="chart">
+                      <div mat-card-avatar class="outer_ring">
+                        <mat-progress-spinner diameter="60"
+                          [value]="movie.vote_average*10">
+                        </mat-progress-spinner>
+                        <div style="position: relative; top: -50px; left: 15px;"><small>{{ movie.vote_average * 10 }}<sup>%</sup></small></div>
+                      </div>
+                      <div class="text">Votes of users<br/>in percentage</div>
+                    </li>
+                  </ul>
+                </mat-card-title>
+                <h3>Overview</h3>
                 <div class="overview">
                   <p>
                     {{movie.overview}}
                   </p>
                 </div>
+              </mat-card-content>
+            </mat-grid-tile>
+          </mat-grid-list>
         </div>
       </div>
     </div>
-</div>
+  </div>

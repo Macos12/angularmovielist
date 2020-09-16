@@ -10,7 +10,9 @@ import { ListofpopularComponent } from './listofpopular/listofpopular.component'
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import {MatCardModule} from '@angular/material/card';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
