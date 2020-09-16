@@ -9,7 +9,7 @@ Listing top 20 most polupar movies in sidebar menu and describing movie details 
 # Resources
 
 - angular 10.1.0
-- material
+- Angular material
 - Data : Open source movie list API - ([https://www.themoviedb.org](https://www.themoviedb.org))
 
 ## Development server
