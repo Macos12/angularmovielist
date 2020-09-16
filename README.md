@@ -1,27 +1,38 @@
-# Angularmovielist
+# Angularmovielist in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+This Project listing most recent popular movies base on The Movie Database (TMDb).
+
+# Movie list and details in one page
+
+Listing top 20 most polupar movies in sidebar menu and describing movie details when user chooses an item from the menu.
+
+# Resources
+
+- angular 10.1.0
+- material
+- Data : Open source movie list API - ([https://www.themoviedb.org](https://www.themoviedb.org))
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## To run the application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Open terminal window and run `ng serve --open`
 
-## Build
+# Build Commands
+```
+# install dependecies
+npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# serve the application to a browser
+ng serve --open
+```
 
-## Running unit tests
+## App is running on localhost:4200
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+To see demo page showing application [click here](https://prnt.sc/uia7en)
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Send an email dimitristzimis@gmail.com
