@@ -4,7 +4,7 @@ This Project listing most recent popular movies base on The Movie Database (TMDb
 
 # Movie list and details in one page
 
-Listing top 20 most polupar movies in sidebar menu and describing movie details when user chooses an item from the menu.
+Listing top 20 most popular movies in sidebar menu and describing movie details when user chooses an item from the menu.
 
 # Resources
 
